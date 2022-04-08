@@ -1,0 +1,17 @@
+<h1> Create a new sub! </h1>
+
+<!-- This is if the sub is not editing -->
+<form action="<%= subs_url %>" method="Post">
+    <input 
+        type="hidden"
+        name="authenticity_token"
+        value="<%=form_authenticity_token%>">
+    <label > Name:
+        <input type="text" name="sub[title]" value="">
+    </label>
+
+    <label > Description:
+        <textarea type="text" name="sub[description]" value=""> </textarea>
+    </label>
+    <input type="submit" value="Submit!">
+</form>   
